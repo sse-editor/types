@@ -4,6 +4,7 @@
   "description": "Types for SSE Editor",
   "main": "./types/index.d.ts",
   "types": "./types/index.d.ts",
+  "files": ["types"],
   "scripts": {
     "prepare": "tsc"
   },
