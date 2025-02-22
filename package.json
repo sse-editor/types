@@ -1,0 +1,19 @@
+{
+  "name": "@sse-editor/types",
+  "version": "1.0.0",
+  "description": "Types for SSE Editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sse-editor/types.git"
+  },
+  "author": "SSE World",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sse-editor/types/issues"
+  },
+  "homepage": "https://github.com/sse-editor/types#readme"
+}
