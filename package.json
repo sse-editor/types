@@ -1,6 +1,6 @@
 {
   "name": "@sse-editor/types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Types for SSE Editor",
   "main": "./types/index.d.ts",
   "types": "./types/index.d.ts",
