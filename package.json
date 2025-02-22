@@ -2,10 +2,8 @@
   "name": "@sse-editor/types",
   "version": "1.0.0",
   "description": "Types for SSE Editor",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "./types/index.d.ts",
+  "types": "./types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sse-editor/types.git"
