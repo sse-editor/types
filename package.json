@@ -5,14 +5,19 @@
   "main": "./types/index.d.ts",
   "types": "./types/index.d.ts",
   "files": [
-    "types"
+    "api",
+    "configs",
+    "block-tunes",
+    "data-formats",
+    "events",
+    "tools",
+    "utils",
+    "codex-notifier.d.ts",
+    "codex-tooltip.d.ts",
+    "index.d.ts"
   ],
   "scripts": {
     "prepare": "tsc"
-  },
-  "exports": {
-    ".": "./types/index.d.ts",
-    "./*": "./types/*"
   },
   "repository": {
     "type": "git",
