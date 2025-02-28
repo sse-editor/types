@@ -1,9 +1,9 @@
 {
   "name": "@sse-editor/types",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Types for SSE Editor",
-  "main": "./types/index.d.ts",
-  "types": "./types/index.d.ts",
+  "main": "./index.d.ts",
+  "types": "./index.d.ts",
   "files": [
     "api",
     "configs",
