@@ -1,9 +1,10 @@
 {
   "name": "@sse-editor/types",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Types for SSE Editor",
   "main": "./index.d.ts",
   "types": "./index.d.ts",
+  "type": "module",
   "files": [
     "api",
     "configs",
@@ -12,13 +13,10 @@
     "events",
     "tools",
     "utils",
-    "codex-notifier.d.ts",
-    "codex-tooltip.d.ts",
+    "codex-notifier.ts",
+    "codex-tooltip.ts",
     "index.d.ts"
   ],
-  "scripts": {
-    "prepare": "tsc"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sse-editor/types.git"

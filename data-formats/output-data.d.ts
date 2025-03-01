@@ -1,6 +1,6 @@
-import {BlockToolData} from '../tools';
-import {BlockTuneData} from '../block-tunes/block-tune-data';
-import { BlockId } from './block-id';
+import { BlockToolData } from "../tools";
+import { BlockTuneData } from "../block-tunes/block-tune-data";
+import { BlockId } from "./block-id";
 
 /**
  * Output of one Tool
@@ -8,7 +8,10 @@ import { BlockId } from './block-id';
  * @template Type - the string literal describing a tool type
  * @template Data - the structure describing a data object supported by the tool
  */
-export interface OutputBlockData<Type extends string = string, Data extends object = any> {
+export interface OutputBlockData<
+  Type extends string = string,
+  Data extends object = any
+> {
   /**
    * Unique Id of the block
    */
@@ -25,7 +28,7 @@ export interface OutputBlockData<Type extends string = string, Data extends obje
   /**
    * Block Tunes data
    */
-  tunes?: {[name: string]: BlockTuneData};
+  tunes?: { [name: string]: BlockTuneData };
 }
 
 export interface OutputData {

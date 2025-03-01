@@ -4,7 +4,14 @@
  * ------------------------------------
  */
 
-// import { EditorConfig } from "./configs";
+import {
+  Dictionary,
+  DictValue,
+  EditorConfig,
+  I18nConfig,
+  I18nDictionary,
+} from "./configs";
+
 import {
   Blocks,
   Caret,
@@ -24,7 +31,7 @@ import {
   Tools,
 } from "./api";
 
-// import { OutputData } from "./data-formats";
+import { OutputData } from "./data-formats";
 import {
   BlockMutationEvent,
   BlockMutationEventMap,
@@ -130,3 +137,68 @@ export interface API {
   readOnly: ReadOnly;
   ui: Ui;
 }
+
+/**
+ * Main Editor class
+ */
+declare class SSEEditor {
+  public static version: string;
+  public isReady: Promise<void>;
+  public blocks: Blocks;
+  public caret: Caret;
+  public sanitizer: Sanitizer;
+  public saver: Saver;
+  public selection: Selection;
+  public styles: Styles;
+  public toolbar: Toolbar;
+  public inlineToolbar: InlineToolbar;
+  public readOnly: ReadOnly;
+  constructor(configuration?: EditorConfig | string);
+
+  /**
+   * API shorthands
+   */
+
+  /**
+   * @see Saver.save
+   */
+  public save(): Promise<OutputData>;
+
+  /**
+   * @see Blocks.clear
+   */
+  public clear(): void;
+
+  /**
+   * @see Blocks.render
+   */
+  public render(data: OutputData): Promise<void>;
+
+  /**
+   * @see Caret.focus
+   */
+  public focus(atEnd?: boolean): boolean;
+
+  /**
+   * @see Events.on
+   */
+  public on(eventName: string, callback: (data?: any) => void): void;
+
+  /**
+   * @see Events.off
+   */
+  public off(eventName: string, callback: (data?: any) => void): void;
+
+  /**
+   * @see Events.emit
+   */
+  public emit(eventName: string, data: any): void;
+
+  /**
+   * Destroy Editor instance and related DOM elements
+   */
+  public destroy(): void;
+}
+
+export as namespace SSEEditor;
+export default SSEEditor;
