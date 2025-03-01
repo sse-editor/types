@@ -129,14 +129,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
-api
-configs
-block-tunes
-data-formats
-events
-tools
-utils
-codex-notifier.d.ts
-codex-tooltip.d.ts
-index.d.ts
